@@ -11,4 +11,8 @@ def home_view(request):
 
 
 def detail_view(request):
-    return render(request, 'blog/post_detail.html')
+    post = Post.objects.get(slug=slug)
+    context = {
+        'post': post,
+    }
+    return render(request, 'blog/post_detail.html', context)

@@ -1,0 +1,16 @@
+# python cache
+__pycache__
+*.pyc
+
+
+# database
+*.sqlite3
+
+# local dirs
+media/
+staticfiles/
+
+# local files
+test_code.txt
+
+.env
