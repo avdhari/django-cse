@@ -10,7 +10,7 @@ def home_view(request):
     return render(request, 'blog/home.html', context)
 
 
-def detail_view(request):
+def detail_view(request, slug):
     post = Post.objects.get(slug=slug)
     context = {
         'post': post,
